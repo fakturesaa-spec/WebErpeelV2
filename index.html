@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website Kelas X RPL 1 - SMK Teknologi">
+    <meta name="theme-color" content="#1a1a2e">
+    <title>Kelas X RPL 1</title>
+    
+    <!-- Preload logo -->
+    <link rel="preload" href="logo-optimized.webp" as="image" type="image/webp">
+    <link rel="icon" type="image/webp" href="logo-optimized.webp">
+    
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="content-wrapper">
+            <header class="header">
+                <div class="header-content">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <!-- WebP with JPEG fallback -->
+                            <picture>
+                                <source srcset="logo-optimized.webp" type="image/webp">
+                                <img src="logo.jpeg" alt="Logo X RPL 1" width="60" height="60" loading="eager">
+                            </picture>
+                        </div>
+                        <div>
+                            <h1>X RPL 1</h1>
+                            <p>Rekayasa Perangkat Lunak</p>
+                        </div>
+                    </div>
+                    <nav class="nav">
+                        <button class="nav-button active" onclick="showTab('home')">Home</button>
+                        <button class="nav-button" onclick="showTab('siswa')">Siswa</button>
+                        <button class="nav-button" onclick="showTab('jadwal')">Jadwal</button>
+                        <button class="nav-button" onclick="showTab('prestasi')">Prestasi</button>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="container">
+                <!-- Tab Home -->
+                <div id="home" class="tab-content active">
+                    <div class="banner">
+                        <h2>Selamat Datang di Kelas X RPL 1! 🚀</h2>
+                        <p>Kelas terbaik dengan semangat coding yang tinggi</p>
+                        <p style="margin-top: 10px; font-size: 16px; opacity: 0.8;">📅 <span id="currentDate"></span></p>
+                        <div class="stats">
+                            <div class="stat-box">
+                                <p>Total Siswa</p>
+                                <p>34</p>
+                            </div>
+                            <div class="stat-box">
+                                <p>Wali Kelas</p>
+                                <p>Nurul Fitrah</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="section-title">📢 Pengumuman</h3>
+                        
+                        <div style="text-align: center; padding: 60px 20px; background: rgba(102, 126, 234, 0.05); border-radius: 15px; border: 2px dashed rgba(102, 126, 234, 0.3);">
+                            <div style="font-size: 80px; margin-bottom: 20px; opacity: 0.3;">📢</div>
+                            <h4 style="font-size: 24px; color: #667eea; margin-bottom: 10px; font-weight: bold;">Belum Ada Pengumuman</h4>
+                            <p style="font-size: 16px; color: #a0aec0; max-width: 400px; margin: 0 auto;">
+                                Pantau terus halaman ini untuk mendapatkan informasi terbaru dari kelas!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Siswa -->
+                <div id="siswa" class="tab-content">
+                    <div class="card">
+                        <h3 class="section-title">👥 Daftar Siswa</h3>
+                        <div class="grid">
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">1</div>
+                                    <div>
+                                        <div class="student-name">AGUSTINA PRATIWI</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">2</div>
+                                    <div>
+                                        <div class="student-name">AHMAD NOUVAL ALVINO</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">3</div>
+                                    <div>
+                                        <div class="student-name">ALATHA BARNETT YUSAD PERMANA</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">4</div>
+                                    <div>
+                                        <div class="student-name">ALENA FRESSILIA</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">5</div>
+                                    <div>
+                                        <div class="student-name">ALICEA SYAMSA ATTA BELLATRIX</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">6</div>
+                                    <div>
+                                        <div class="student-name">ANDIKA FEBRIANTO</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">7</div>
+                                    <div>
+                                        <div class="student-name">ANEVALL REDYA VIOLA</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">8</div>
+                                    <div>
+                                        <div class="student-name">ANIF FAKTURESA RAVAEL</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">9</div>
+                                    <div>
+                                        <div class="student-name">ANINDITA NAFISAH FARRAS PUTRI</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">10</div>
+                                    <div>
+                                        <div class="student-name">ARDAN ELISTYAN</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">11</div>
+                                    <div>
+                                        <div class="student-name">ATTA ALFARIZI</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">12</div>
+                                    <div>
+                                        <div class="student-name">AURA CAHAYA FERNANDA</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">13</div>
+                                    <div>
+                                        <div class="student-name">AVELYA MAULIDIA ZAHRA</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">14</div>
+                                    <div>
+                                        <div class="student-name">BUNGA CINTA AWALIDA</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">15</div>
+                                    <div>
+                                        <div class="student-name">CHERYL LISTA FEBY ERVIANA</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">16</div>
+                                    <div>
+                                        <div class="student-name">CHOIRULIZA FIRDAUSYFA</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">17</div>
+                                    <div>
+                                        <div class="student-name">CHRISTIAN MAULANA AL HAQIQI</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">18</div>
+                                    <div>
+                                        <div class="student-name">CHRISTIAN PRAMUDYO ADI PRABOWO</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">19</div>
+                                    <div>
+                                        <div class="student-name">CLARA MEYVITA SYAHRANI</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">20</div>
+                                    <div>
+                                        <div class="student-name">DHINI MAREYTHA AMIRE</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">21</div>
+                                    <div>
+                                        <div class="student-name">DINDA INTAN ALFAIZ</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">22</div>
+                                    <div>
+                                        <div class="student-name">DONY DWI RISTANTO</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">23</div>
+                                    <div>
+                                        <div class="student-name">ELIZA AYU ALFABETH</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">24</div>
+                                    <div>
+                                        <div class="student-name">FADANI TRISNA DIABY</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">25</div>
+                                    <div>
+                                        <div class="student-name">FIKRI EKA WIDYADHANA</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">26</div>
+                                    <div>
+                                        <div class="student-name">FIRYAL ANGGARAPUTRA</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">27</div>
+                                    <div>
+                                        <div class="student-name">HALIMATUS SA'ADAH</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">28</div>
+                                    <div>
+                                        <div class="student-name">HANIF AKBAR KUSUMANDYOKO</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">29</div>
+                                    <div>
+                                        <div class="student-name">HAVANA EGA RIANTO</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">30</div>
+                                    <div>
+                                        <div class="student-name">HELSA TANAYA</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">31</div>
+                                    <div>
+                                        <div class="student-name">HILDA TRI ANANTA</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">32</div>
+                                    <div>
+                                        <div class="student-name">IBNU ABI ZAKARIA</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">33</div>
+                                    <div>
+                                        <div class="student-name">JASMINE ASSEL ARDITANIA</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <div class="student-info">
+                                    <div class="avatar">34</div>
+                                    <div>
+                                        <div class="student-name">NEFI AEKA MAHARANI</div>
+                                        <div class="student-role">Siswa</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Jadwal -->
+                <div id="jadwal" class="tab-content">
+                    <div class="card">
+                        <h3 class="section-title">📅 Jadwal Pelajaran</h3>
+                        
+                        <div class="schedule-day">
+                            <div class="day-title">Senin</div>
+                            <div class="subjects-grid">
+                                <div class="subject-box">1. IPAS</div>
+                                <div class="subject-box">2. IPAS</div>
+                                <div class="subject-box">3. IPAS</div>
+                                <div class="subject-box">4. IPAS</div>
+                                <div class="subject-box">5. DDP3</div>
+                                <div class="subject-box">6. DDP3</div>
+                                <div class="subject-box">7. DDP3</div>
+                                <div class="subject-box">8. DDP3</div>
+                                <div class="subject-box">9. —</div>
+                                <div class="subject-box">10. —</div>
+                                <div class="subject-box">11. —</div>
+                            </div>
+                        </div>
+
+                        <div class="schedule-day">
+                            <div class="day-title">Selasa</div>
+                            <div class="subjects-grid">
+                                <div class="subject-box">1. BINA</div>
+                                <div class="subject-box">2. BINA</div>
+                                <div class="subject-box">3. BINA</div>
+                                <div class="subject-box">4. BINA</div>
+                                <div class="subject-box">5. BP BK</div>
+                                <div class="subject-box">6. Bahasa Jepang</div>
+                                <div class="subject-box">7. BING</div>
+                                <div class="subject-box">8. BING</div>
+                                <div class="subject-box">9. BING</div>
+                                <div class="subject-box">10. BING</div>
+                                <div class="subject-box">11. —</div>
+                            </div>
+                        </div>
+
+                        <div class="schedule-day">
+                            <div class="day-title">Rabu</div>
+                            <div class="subjects-grid">
+                                <div class="subject-box">1. Informatika</div>
+                                <div class="subject-box">2. Informatika</div>
+                                <div class="subject-box">3. Informatika</div>
+                                <div class="subject-box">4. Informatika</div>
+                                <div class="subject-box">5. IPAS</div>
+                                <div class="subject-box">6. IPAS</div>
+                                <div class="subject-box">7. Mulok Produktif</div>
+                                <div class="subject-box">8. Mulok Produktif</div>
+                                <div class="subject-box">9. —</div>
+                                <div class="subject-box">10. —</div>
+                                <div class="subject-box">11. —</div>
+                            </div>
+                        </div>
+
+                        <div class="schedule-day">
+                            <div class="day-title">Kamis</div>
+                            <div class="subjects-grid">
+                                <div class="subject-box">1. Penjas Orkes</div>
+                                <div class="subject-box">2. Penjas Orkes</div>
+                                <div class="subject-box">3. Penjas Orkes</div>
+                                <div class="subject-box">4. Seni Budaya</div>
+                                <div class="subject-box">5. Seni Budaya</div>
+                                <div class="subject-box">6. Matematika</div>
+                                <div class="subject-box">7. Matematika</div>
+                                <div class="subject-box">8. Matematika</div>
+                                <div class="subject-box">9. Matematika</div>
+                                <div class="subject-box">10. PGRI</div>
+                                <div class="subject-box">11. —</div>
+                            </div>
+                        </div>
+
+                        <div class="schedule-day">
+                            <div class="day-title">Jumat</div>
+                            <div class="subjects-grid">
+                                <div class="subject-box">1. DDP2</div>
+                                <div class="subject-box">2. DDP2</div>
+                                <div class="subject-box">3. DDP2</div>
+                                <div class="subject-box">4. DDP2</div>
+                                <div class="subject-box">5. DDP1</div>
+                                <div class="subject-box">6. DDP1</div>
+                                <div class="subject-box">7. PABP</div>
+                                <div class="subject-box">8. DDP1</div>
+                                <div class="subject-box">9. —</div>
+                                <div class="subject-box">10. —</div>
+                                <div class="subject-box">11. —</div>
+                            </div>
+                        </div>
+
+                        <div class="schedule-day">
+                            <div class="day-title">Sabtu</div>
+                            <div class="subjects-grid">
+                                <div class="subject-box">1. PPKN</div>
+                                <div class="subject-box">2. PPKN</div>
+                                <div class="subject-box">3. —</div>
+                                <div class="subject-box">4. Bahasa Jawa</div>
+                                <div class="subject-box">5. PABP</div>
+                                <div class="subject-box">6. PABP</div>
+                                <div class="subject-box">7. PABP</div>
+                                <div class="subject-box">8. —</div>
+                                <div class="subject-box">9. Sejarah</div>
+                                <div class="subject-box">10. Sejarah</div>
+                                <div class="subject-box">11. —</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Prestasi -->
+                <div id="prestasi" class="tab-content">
+                    <div class="card">
+                        <h3 class="section-title">🏆 Prestasi Kelas</h3>
+                        
+                        <div style="text-align: center; padding: 80px 20px; background: rgba(102, 126, 234, 0.05); border-radius: 15px; border: 2px dashed rgba(102, 126, 234, 0.3);">
+                            <div style="font-size: 100px; margin-bottom: 20px; opacity: 0.3;">🏆</div>
+                            <h4 style="font-size: 28px; color: #667eea; margin-bottom: 15px; font-weight: bold;">Belum Ada Prestasi</h4>
+                            <p style="font-size: 18px; color: #a0aec0; max-width: 500px; margin: 0 auto; line-height: 1.6;">
+                                Mari berjuang bersama untuk meraih prestasi gemilang! 💪<br>
+                                <span style="font-size: 14px; color: #718096;">Setiap usaha pasti membuahkan hasil</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- Tentang Kelas dengan Logo -->
+                    <div>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                            <picture>
+                                <source srcset="logo-optimized.webp" type="image/webp">
+                                <img src="logo.jpeg" alt="Logo X RPL 1" loading="lazy" width="40" height="40" style="border-radius: 8px; object-fit: cover; box-shadow: 0 0 15px rgba(102, 126, 234, 0.5); border: 2px solid rgba(102, 126, 234, 0.3);">
+                            </picture>
+                            <h4 style="color: #667eea; font-size: 18px; margin: 0;">X RPL 1</h4>
+                        </div>
+                        <p>Kelas Rekayasa Perangkat Lunak yang berfokus pada pengembangan skill programming dan teknologi terkini.</p>
+                    </div>
+
+                    <!-- Kontak -->
+                    <div>
+                        <h4>Kontak</h4>
+                        <p>
+                            📧 Email: fakturesaa@gmail.com<br>
+                            📱 WhatsApp: 0857-3908-7602<br>
+                            🏫 Wali Kelas: Nurul Fitrah
+                        </p>
+                    </div>
+
+                    <!-- Link Cepat -->
+                    <div>
+                        <h4>Link Cepat</h4>
+                        <div class="footer-links">
+                            <a href="#" onclick="showTab('home'); return false;">🏠 Home</a>
+                            <a href="#" onclick="showTab('siswa'); return false;">👥 Daftar Siswa</a>
+                            <a href="#" onclick="showTab('jadwal'); return false;">📅 Jadwal</a>
+                            <a href="#" onclick="showTab('prestasi'); return false;">🏆 Prestasi</a>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div>
+                        <h4>Social Media</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook">📘</a>
+                            <a href="#" aria-label="Instagram">📷</a>
+                            <a href="#" aria-label="Twitter">🐦</a>
+                            <a href="#" aria-label="WhatsApp">💬</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="footer-divider"></div>
+
+                <!-- Copyright -->
+                <div class="footer-bottom">
+                    <p>© 2026 Kelas X RPL 1 - SMK Teknologi</p>
+                    <p style="font-size: 14px; color: #718096;">Bersama Membangun Masa Depan Digital 🚀</p>
+                    <p>Made with ❤️ by Fakturesaa X RPL 1</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal untuk info guru -->
+    <div id="teacherModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>📚 Informasi Guru</h3>
+                <button class="close-modal" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="teacher-info">
+                    <p><strong>Mata Pelajaran:</strong> <span id="subjectName"></span></p>
+                    <p><strong>Nama Guru:</strong> <span id="teacherName"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
